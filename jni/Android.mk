@@ -180,7 +180,7 @@ LOCAL_SHARED_LIBRARIES := \
 	libmemtrack \
 	libandroidfw \
 	libexpat \
-	libnativehelper \
+	libnativehelperaz \
 	liblog \
 	libcutils \
 	libutils \
@@ -228,7 +228,7 @@ ifeq ($(WITH_MALLOC_LEAK_CHECK),true)
 	LOCAL_CFLAGS += -DMALLOC_LEAK_CHECK
 endif
 
-LOCAL_MODULE:= libandroid_runtime
+LOCAL_MODULE:= libandroid_runtimeaz
 
 include external/stlport/libstlport.mk
 include $(BUILD_SHARED_LIBRARY)
